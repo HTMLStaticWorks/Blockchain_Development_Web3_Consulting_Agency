@@ -1,0 +1,35 @@
+/* Dark Mode Variables Override */
+
+[data-bs-theme="dark"] {
+    /* Base Colors - Dark Theme (High-tech / Enterprise) */
+    --color-bg-base: #0a0f1c;      /* Deep midnight blue/black */
+    --color-bg-surface: #111827;   /* Slightly lighter gray/blue */
+    --color-text-main: #f8fafc;
+    --color-text-muted: #94a3b8;
+    
+    /* Primary / Secondary adjusting for dark mode visibility */
+    --color-primary: #3b82f6;      
+    --color-secondary: #a855f7;    
+    
+    /* Glassmorphism */
+    --glass-bg: rgba(17, 24, 39, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .navbar {
+    background: rgba(10, 15, 28, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+[data-bs-theme="dark"] .mega-footer {
+    background-color: var(--color-bg-surface);
+}
+
+[data-bs-theme="dark"] .service-card {
+    background: var(--color-bg-surface);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .service-card:hover {
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+}

@@ -1,0 +1,41 @@
+/* 
+====================================================================
+Blockchain Development & Web3 Consulting Agency - RTL Styles
+==================================================================== 
+*/
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Adjust margins and paddings for RTL */
+[dir="rtl"] .me-3 {
+  margin-right: 0 !important;
+  margin-left: 1rem !important;
+}
+
+[dir="rtl"] .ms-3 {
+  margin-left: 0 !important;
+  margin-right: 1rem !important;
+}
+
+[dir="rtl"] .pe-3 {
+  padding-right: 0 !important;
+  padding-left: 1rem !important;
+}
+
+[dir="rtl"] .ps-3 {
+  padding-left: 0 !important;
+  padding-right: 1rem !important;
+}
+
+[dir="rtl"] .navbar-brand {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 20px;
+}

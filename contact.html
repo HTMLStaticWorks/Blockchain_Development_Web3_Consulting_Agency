@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NodeX | Enterprise Blockchain Solutions</title>
-    <meta name="description" content="Premium Web3 Consulting and Blockchain Development Agency for startups and enterprises. Book a discovery call today.">
-    <!-- Bootstrap 5 CDN -->
+    <title>Contact Us | NodeX</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 </head>
 <body>
-    <!-- Header / Navigation -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -26,14 +22,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active border border-primary rounded bg-primary bg-opacity-10 px-3 mx-1" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link mx-1" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link mx-1" href="home-2.html">Home2</a></li>
                         <li class="nav-item"><a class="nav-link mx-1" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link mx-1" href="services.html">Services</a></li>
                         <li class="nav-item"><a class="nav-link mx-1" href="portfolio.html">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link mx-1" href="blog.html">Insights</a></li>
                         <li class="nav-item"><a class="nav-link mx-1" href="solutions.html">Solutions</a></li>
-                        <li class="nav-item"><a class="nav-link mx-1" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active border border-primary rounded bg-primary bg-opacity-10 px-3 mx-1" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="d-flex gap-2 align-items-stretch">
                         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-2" onclick="document.documentElement.setAttribute('dir', document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl')" title="Toggle RTL">RTL</button>
@@ -51,196 +47,105 @@
     </header>
 
     <main>
-        <!-- Section: Hero Banner -->
         <section class="hero-section text-center">
             <div class="container">
-                <h1 class="mb-4">Enterprise-Grade <span class="text-gradient">Blockchain Development</span></h1>
-                <p class="lead mx-auto mb-5" style="max-width: 800px;">We transform ideas into secure, production-ready Web3 applications for startups and enterprises.</p>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="contact.html" class="btn btn-primary-custom btn-lg">Book a Discovery Call</a>
-                    <a href="portfolio.html" class="btn btn-outline-custom btn-lg">View Our Work</a>
-                </div>
+                <h1 class="mb-4">Book a <span class="text-gradient">Discovery Call</span></h1>
+                <p class="lead mx-auto mb-5">Let's discuss how decentralized technology can scale your business.</p>
             </div>
         </section>
 
-        <!-- Section: Trusted By / Client Logos -->
-        <section class="py-5 border-top border-bottom" style="border-color: var(--glass-border) !important;">
-            <div class="container text-center">
-                <p class="text-muted mb-4 text-uppercase fw-semibold" style="letter-spacing: 2px;">Trusted by Innovative Companies</p>
-                <div class="d-flex justify-content-center gap-5 flex-wrap opacity-50 align-items-center">
-                    <div class="fs-4 fw-bold">Binance</div>
-                    <div class="fs-4 fw-bold">Polygon</div>
-                    <div class="fs-4 fw-bold">Chainlink</div>
-                    <div class="fs-4 fw-bold">ConsenSys</div>
-                    <div class="fs-4 fw-bold">Aave</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section: Services Overview -->
-        <section class="py-5 my-5">
+        <!-- Contact Section -->
+        <section class="py-5">
             <div class="container">
-                <div class="text-center mb-5">
-                    <h2>Our <span class="text-gradient">Services</span></h2>
-                    <p>End-to-end blockchain architecture and development.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-4 d-flex">
-                        <div class="service-card text-center w-100 h-100">
-                            <h4>Smart Contracts</h4>
-                            <p class="text-muted">Secure, optimized, and audited smart contracts for DeFi, NFTs, and DAOs.</p>
-                        </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 text-start">
+                        <h2 class="mb-4">Get in Touch</h2>
+                        <p class="text-muted mb-5">Have a question or want to work together? Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <form class="contact-form text-start">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label text-start d-block">First Name</label>
+                                    <input type="text" class="form-control bg-transparent border-secondary text-body" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label text-start d-block">Last Name</label>
+                                    <input type="text" class="form-control bg-transparent border-secondary text-body" id="lastName" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label text-start d-block">Email Address</label>
+                                    <input type="email" class="form-control bg-transparent border-secondary text-body" id="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label text-start d-block">Subject</label>
+                                    <input type="text" class="form-control bg-transparent border-secondary text-body" id="subject" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label text-start d-block">Message</label>
+                                    <textarea class="form-control bg-transparent border-secondary text-body" id="message" rows="5" required></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary-custom w-100 py-3">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-md-4 d-flex">
-                        <div class="service-card text-center w-100 h-100">
-                            <h4>dApp Development</h4>
-                            <p class="text-muted">Scalable decentralized applications with seamless Web3 wallet integrations.</p>
+                    
+                    <div class="col-lg-6 text-start">
+                        <h2 class="mb-4">Contact Information</h2>
+                        <p class="text-muted mb-5">Prefer to reach out directly? Use the information below to get in touch with our team.</p>
+                        
+                        <div class="d-flex align-items-center mb-4 p-4 border border-secondary rounded bg-body-tertiary">
+                            <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-circle me-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Headquarters</h5>
+                                <p class="mb-0 text-muted">123 Web3 Avenue, Crypto City, CA 94105</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 d-flex">
-                        <div class="service-card text-center w-100 h-100">
-                            <h4>Blockchain Consulting</h4>
-                            <p class="text-muted">Strategic guidance on tokenomics, architecture, and ecosystem selection.</p>
+                        
+                        <div class="d-flex align-items-center mb-4 p-4 border border-secondary rounded bg-body-tertiary">
+                            <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-circle me-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email Us</h5>
+                                <p class="mb-0 text-muted">hello@nodex.io</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section: Why Choose Us -->
-        <section class="py-5 bg-body-surface glass-panel mx-3 mx-lg-5 mb-5 p-5">
-            <div class="container text-center">
-                <h2 class="mb-4">Why Choose Us</h2>
-                <p class="lead mb-5">We are not just developers; we are Web3 architects focused on security and scale.</p>
-                <div class="row g-4 text-center">
-                    <div class="col-md-4 d-flex">
-                        <div class="p-4 bg-transparent border border-secondary rounded w-100 h-100">
-                            <h4 class="text-primary mb-3">Security First</h4>
-                            <p class="text-muted mb-0">Our smart contracts undergo rigorous multi-stage audits and formal verification to ensure absolute security for your assets.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex">
-                        <div class="p-4 bg-transparent border border-secondary rounded w-100 h-100">
-                            <h4 class="text-primary mb-3">Scalable Architecture</h4>
-                            <p class="text-muted mb-0">We build future-proof architectures utilizing layer-2 solutions and optimized infrastructure for maximum throughput.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex">
-                        <div class="p-4 bg-transparent border border-secondary rounded w-100 h-100">
-                            <h4 class="text-primary mb-3">Expert Team</h4>
-                            <p class="text-muted mb-0">Our team consists of veteran blockchain developers, cryptographers, and system architects with proven track records.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section: Blockchain Expertise -->
-        <section class="py-5 mb-5">
-            <div class="container text-center">
-                <h2>Blockchain <span class="text-gradient">Networks</span> We Build On</h2>
-                <div class="d-flex justify-content-center gap-4 flex-wrap mt-5">
-                    <span class="badge bg-secondary p-3 fs-6">Ethereum</span>
-                    <span class="badge bg-secondary p-3 fs-6">Polygon</span>
-                    <span class="badge bg-secondary p-3 fs-6">Solana</span>
-                    <span class="badge bg-secondary p-3 fs-6">Base</span>
-                    <span class="badge bg-secondary p-3 fs-6">Arbitrum</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section: Industries We Serve -->
-        <section class="py-5 mb-5 bg-body-tertiary">
-            <div class="container text-center">
-                <h2 class="mb-5">Industries We Serve</h2>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">FinTech</h5>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">Gaming</h5>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">Healthcare</h5>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">Supply Chain</h5>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">Real Estate</h5>
+                        
+                        <div class="d-flex align-items-center mb-4 p-4 border border-secondary rounded bg-body-tertiary">
+                            <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-circle me-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Call Us</h5>
+                                <p class="mb-0 text-muted">+1 (555) 123-4567</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section: Featured Case Studies -->
-        <section class="py-5 mb-5">
-            <div class="container text-center">
-                <h2>Featured Case Studies</h2>
-                <p>Discover how we've helped startups scale their Web3 visions.</p>
-                <a href="portfolio.html" class="btn btn-outline-custom mt-3">View Portfolio</a>
-            </div>
-        </section>
-
-        <!-- Section: Development Process -->
-        <section class="py-5 mb-5">
-            <div class="container text-center">
-                <h2>Our Development Process</h2>
-                <p class="text-muted mt-4">Discovery → Architecture → Development → Audit → Deployment → Support</p>
-            </div>
-        </section>
-
-        <!-- Section: Technology Stack -->
-        <section class="py-5 mb-5 glass-panel mx-3 mx-lg-5 p-5">
-            <div class="container text-center">
-                <h2>Our Tech Stack</h2>
-                <p class="text-muted">Solidity • Rust • React • Next.js • Node.js • Hardhat • Foundry</p>
-            </div>
-        </section>
-
-        <!-- Section: Testimonials -->
-        <section class="py-5 mb-5">
-            <div class="container text-center">
-                <h2>Client Testimonials</h2>
-                <div class="card bg-transparent border-light mx-auto mt-4" style="max-width: 600px;">
-                    <div class="card-body">
-                        <p class="fst-italic">"They understood our complex DeFi requirements immediately and delivered a highly secure, audited protocol ahead of schedule."</p>
-                        <footer class="blockquote-footer mt-2">Founder, DeFiProtocol</footer>
-                    </div>
+        <!-- Interactive Map Section -->
+        <section class="py-0">
+            <div class="container-fluid px-0">
+                <div class="map-container w-100" style="height: 450px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.5076402!3d37.757815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
-        </section>
-
-        <!-- Section: Latest Insights -->
-        <section class="py-5 mb-5">
-            <div class="container text-center">
-                <h2>Latest Insights</h2>
-                <p>Expert knowledge on Web3 development, security, and strategy.</p>
-                <a href="blog.html" class="btn btn-outline-custom mt-3">Read Our Blog</a>
-            </div>
-        </section>
-
-        <!-- Section: Call to Action -->
-        <section class="py-5 mb-5 bg-gradient-primary text-white text-center rounded-3 mx-3 mx-lg-5 p-5 shadow-lg">
-            <div class="container">
-                <h2 class="text-white mb-4">Ready to Build Your Web3 Vision?</h2>
-                <p class="lead mb-4">Schedule a discovery call with our blockchain architects today.</p>
-                <a href="contact.html" class="btn btn-light btn-lg fw-bold text-primary">Book a Discovery Call</a>
             </div>
         </section>
     </main>
 
-    <!-- Mega Footer -->
     <footer class="mega-footer">
         <div class="container">
             <div class="row g-4 mb-4">
@@ -300,7 +205,6 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 
