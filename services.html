@@ -61,10 +61,10 @@
                     </ul>
                     <div class="d-flex gap-2 align-items-stretch">
                         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-2"
-                            onclick="let target = document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl'; document.documentElement.setAttribute('dir', target); localStorage.setItem('dir', target);"
+                            onclick="let dirTarget = document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl'; document.documentElement.setAttribute('dir', dirTarget); localStorage.setItem('dir', dirTarget);"
                             title="Toggle RTL">RTL</button>
                         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-3"
-                            onclick="let target = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-bs-theme', target); localStorage.setItem('theme', target);"
+                            onclick="let themeTarget = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-bs-theme', themeTarget); localStorage.setItem('theme', themeTarget);"
                             title="Toggle Theme">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
@@ -141,7 +141,7 @@
         <section class="py-4 bg-body-tertiary">
             <div class="container">
                 <h2 class="mb-5 text-center fw-bold">Our <span class="text-gradient">Specialized Solutions</span></h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                     <!-- Card 1 -->
                     <div class="col">
                         <div class="service-card text-center d-flex flex-column h-100 position-relative p-4">

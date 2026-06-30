@@ -51,10 +51,10 @@
     <!-- Top Right Controls -->
     <div class="position-absolute top-0 end-0 p-3 d-flex gap-2 z-3">
         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-2"
-            onclick="let target = document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl'; document.documentElement.setAttribute('dir', target); localStorage.setItem('dir', target);"
+            onclick="let dirTarget = document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl'; document.documentElement.setAttribute('dir', dirTarget); localStorage.setItem('dir', dirTarget);"
             title="Toggle RTL">RTL</button>
         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-3"
-            onclick="let target = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-bs-theme', target); localStorage.setItem('theme', target);"
+            onclick="let themeTarget = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-bs-theme', themeTarget); localStorage.setItem('theme', themeTarget);"
             title="Toggle Theme">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-moon-stars-fill" viewBox="0 0 16 16">

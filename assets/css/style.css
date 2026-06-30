@@ -391,3 +391,18 @@ header .btn {
 .tech-badge:hover i {
     color: #fff !important;
 }
+
+/* Fix mobile menu page shift */
+@media (max-width: 1199.98px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-bg-base);
+        padding: 1rem;
+        border-bottom: 1px solid var(--glass-border);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        z-index: 1050;
+    }
+}

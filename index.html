@@ -86,10 +86,10 @@
                     </ul>
                     <div class="d-flex gap-2 align-items-stretch">
                         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-2"
-                            onclick="let target = document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl'; document.documentElement.setAttribute('dir', target); localStorage.setItem('dir', target);"
+                            onclick="let dirTarget = document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl'; document.documentElement.setAttribute('dir', dirTarget); localStorage.setItem('dir', dirTarget);"
                             title="Toggle RTL">RTL</button>
                         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-3"
-                            onclick="let target = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-bs-theme', target); localStorage.setItem('theme', target);"
+                            onclick="let themeTarget = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-bs-theme', themeTarget); localStorage.setItem('theme', themeTarget);"
                             title="Toggle Theme">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
@@ -116,8 +116,8 @@
                 <h1 class="mb-4">Enterprise-Grade <span class="text-gradient">Blockchain Development</span></h1>
                 <p class="lead mx-auto mb-5" style="max-width: 800px;">We transform ideas into secure, production-ready
                     NodeX applications for startups and enterprises.</p>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="contact.html" class="btn btn-primary-custom btn-lg">Book a Discovery Call</a>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                    <a href="contact.html" class="btn btn-primary-custom btn-lg">Book a Call</a>
                     <a href="portfolio.html" class="btn btn-outline-custom btn-lg text-white border-white">View Our
                         Work</a>
                 </div>
