@@ -215,6 +215,10 @@ header .btn {
 }
 
 @media (max-width: 1000px) {
+    .navbar-nav .nav-link.active {
+        width: 50%;
+    }
+
     .navbar-nav .nav-link {
         padding-top: 0.3rem !important;
         padding-bottom: 0.3rem !important;
