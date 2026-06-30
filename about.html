@@ -17,8 +17,15 @@
     </script>
     <style>
         /* Force hero text white in all themes */
-        .hero-section h1, .hero-section h2, .hero-section p { color: #ffffff !important; }
-        .hero-section h1 span:not(.text-gradient) { color: #ffffff !important; }
+        .hero-section h1,
+        .hero-section h2,
+        .hero-section p {
+            color: #ffffff !important;
+        }
+
+        .hero-section h1 span:not(.text-gradient) {
+            color: #ffffff !important;
+        }
     </style>
 </head>
 
@@ -26,7 +33,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand text-gradient d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">
+                <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">
                     <img src="assets/logo.svg" alt="NodeX Logo" width="32" height="32">
                     NodeX
                 </a>
@@ -81,11 +88,11 @@
         </section>
 
         <!-- Sections outline based on specs -->
-        <section class="py-5 text-center">
+        <section class="py-4 text-center">
             <div class="container">
-                <div class="row g-4 align-items-center text-start">
+                <div class="row g-4 align-items-center text-center">
                     <div class="col-lg-6">
-                        <h2 class="text-center text-lg-start">Our Story</h2>
+                        <h2 class="text-center">Our Story</h2>
                         <p class="text-muted mt-4">NodeX was founded with a single mission: to provide enterprise-grade
                             security and scalability to the NodeX ecosystem. From early days in Bitcoin and Ethereum
                             communities, our founders recognized the need for professional, institutional-level
@@ -94,23 +101,26 @@
                             dedicated to building robust decentralized applications that stand the test of time.</p>
                     </div>
                     <div class="col-lg-6">
-                        <div class="position-relative h-100">
-                            <img src="assets/images/about-story.png" alt="Our Story" class="img-fluid rounded-4 shadow-lg border border-secondary w-100 h-100" style="min-height: 400px; object-fit: cover;">
-                            <div class="position-absolute bottom-0 start-0 m-4 glass-panel p-4 rounded-3 shadow-sm border border-secondary" style="max-width: 250px; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(10px);">
-                                <h3 class="text-gradient fw-bold mb-1">Since 2018</h3>
-                                <p class="mb-0 text-white fw-medium small">Pioneering Enterprise Web3</p>
+                        <div class="position-relative">
+                            <img src="assets/images/about-story.png" alt="Our Story"
+                                class="img-fluid rounded-4 shadow-lg border border-secondary w-100"
+                                style="max-height: 350px; object-fit: cover;">
+                            <div class="position-absolute top-0 end-0 m-3 glass-panel p-3 rounded-3 shadow-sm border border-secondary"
+                                style="max-width: 200px; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+                                <h5 class="text-gradient fw-bold mb-1">Since 2018</h5>
+                                <p class="mb-0 text-white small">Pioneering Enterprise Web3</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="py-5 text-center bg-body-tertiary">
+        <section class="py-4 text-center bg-body-tertiary">
             <div class="container">
                 <h2 class="mb-4 text-center">Mission & Vision</h2>
                 <div class="row g-4 text-center">
                     <div class="col-md-6 d-flex">
-                        <div class="p-4 bg-transparent border border-secondary rounded w-100 h-100">
+                        <div class="card p-4 bg-transparent border-secondary rounded w-100 h-100">
                             <h4 class="text-primary mb-3">Our Mission</h4>
                             <p class="text-muted mb-0">To accelerate the global transition to decentralized
                                 infrastructure by providing top-tier, secure, and scalable blockchain engineering
@@ -118,7 +128,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 d-flex">
-                        <div class="p-4 bg-transparent border border-secondary rounded w-100 h-100">
+                        <div class="card p-4 bg-transparent border-secondary rounded w-100 h-100">
                             <h4 class="text-primary mb-3">Our Vision</h4>
                             <p class="text-muted mb-0">A future where trust is embedded in code, systems are transparent
                                 by default, and financial sovereignty is accessible to everyone.</p>
@@ -127,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-5 text-center">
+        <section class="py-4 text-center">
             <div class="container">
                 <h2 class="mb-4 text-center">Core Values</h2>
                 <div class="row g-4 text-center">
@@ -155,7 +165,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-5 text-center bg-body-tertiary">
+        <section class="py-4 text-center bg-body-tertiary">
             <div class="container">
                 <h2 class="mb-4 text-center">Meet Our Team</h2>
                 <div class="row g-4 text-center">
@@ -193,93 +203,131 @@
                 </div>
             </div>
         </section>
-        <section class="py-5 text-center">
+        <section class="py-4 text-center">
             <div class="container">
                 <div class="text-center mb-5">
-                    <span class="badge bg-primary bg-opacity-10 text-primary mb-2 px-3 py-2 rounded-pill border border-primary">Industry Standards</span>
+                    <span
+                        class="badge bg-primary bg-opacity-10 text-primary mb-2 px-3 py-2 rounded-pill border border-primary">Industry
+                        Standards</span>
                     <h2 class="mb-3">Security & Compliance</h2>
-                    <p class="text-muted mx-auto" style="max-width: 600px;">We adhere to the highest industry standards, ensuring your protocols are compliant, secure, and resilient against modern threats.</p>
+                    <p class="text-muted mx-auto" style="max-width: 600px;">We adhere to the highest industry standards,
+                        ensuring your protocols are compliant, secure, and resilient against modern threats.</p>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-4">
-                        <div class="card bg-transparent border border-secondary rounded-4 w-100 h-100 p-4 text-center" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-                            <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/></svg>
+                        <div class="card bg-transparent border border-secondary rounded-4 w-100 h-100 p-4 text-center"
+                            style="transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-5px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+                                </svg>
                             </div>
                             <h4 class="mb-3">ISO 27001 Certified</h4>
-                            <p class="text-muted mb-0 small">Comprehensive information security management systems to protect sensitive data and assets.</p>
+                            <p class="text-muted mb-0 small">Comprehensive information security management systems to
+                                protect sensitive data and assets.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card bg-transparent border border-secondary rounded-4 w-100 h-100 p-4 text-center" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-                            <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/></svg>
+                        <div class="card bg-transparent border border-secondary rounded-4 w-100 h-100 p-4 text-center"
+                            style="transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-5px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z" />
+                                </svg>
                             </div>
                             <h4 class="mb-3">Smart Contract Audits</h4>
-                            <p class="text-muted mb-0 small">Partnered with top-tier auditing firms to rigorously verify contract security before deployment.</p>
+                            <p class="text-muted mb-0 small">Partnered with top-tier auditing firms to rigorously verify
+                                contract security before deployment.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card bg-transparent border border-secondary rounded-4 w-100 h-100 p-4 text-center" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-                            <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
-                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM8 1c-1.573 0-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4s.875 1.755 1.904 2.223C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777C13.125 5.755 14 5.007 14 4s-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1Z"/></svg>
+                        <div class="card bg-transparent border border-secondary rounded-4 w-100 h-100 p-4 text-center"
+                            style="transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-5px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-4"
+                                style="width: 64px; height: 64px;">
+                                <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM8 1c-1.573 0-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4s.875 1.755 1.904 2.223C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777C13.125 5.755 14 5.007 14 4s-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1Z" />
+                                </svg>
                             </div>
                             <h4 class="mb-3">SOC 2 Type II</h4>
-                            <p class="text-muted mb-0 small">Ensuring enterprise-grade controls over security, availability, and processing integrity.</p>
+                            <p class="text-muted mb-0 small">Ensuring enterprise-grade controls over security,
+                                availability, and processing integrity.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="py-5 bg-body-tertiary">
+        <section class="py-4 bg-body-tertiary">
             <div class="container">
                 <div class="text-center mb-5">
-                    <span class="badge bg-primary bg-opacity-10 text-primary mb-2 px-3 py-2 rounded-pill border border-primary">Process</span>
+                    <span
+                        class="badge bg-primary bg-opacity-10 text-primary mb-2 px-3 py-2 rounded-pill border border-primary">Process</span>
                     <h2 class="mb-3">Our Methodology</h2>
-                    <p class="text-muted mx-auto" style="max-width: 600px;">A disciplined approach to building immutable systems. We blend agile delivery with the rigor required for financial grade software.</p>
+                    <p class="text-muted mx-auto" style="max-width: 600px;">A disciplined approach to building immutable
+                        systems. We blend agile delivery with the rigor required for financial grade software.</p>
                 </div>
                 <div class="row g-4 position-relative z-1">
                     <div class="col-md-3 text-center">
-                        <div class="bg-dark border border-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 text-primary fs-3 fw-bold shadow" style="width: 80px; height: 80px;">1</div>
+                        <div class="bg-body-tertiary border border-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 text-primary fs-3 fw-bold shadow"
+                            style="width: 80px; height: 80px;">1</div>
                         <h5 class="">Discovery</h5>
                         <p class="text-muted small">Architecture design and threat modeling.</p>
                     </div>
                     <div class="col-md-3 text-center">
-                        <div class="bg-dark border border-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 text-primary fs-3 fw-bold shadow" style="width: 80px; height: 80px;">2</div>
+                        <div class="bg-body-tertiary border border-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 text-primary fs-3 fw-bold shadow"
+                            style="width: 80px; height: 80px;">2</div>
                         <h5 class="">Development</h5>
                         <p class="text-muted small">Test-driven smart contract engineering.</p>
                     </div>
                     <div class="col-md-3 text-center">
-                        <div class="bg-dark border border-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 text-primary fs-3 fw-bold shadow" style="width: 80px; height: 80px;">3</div>
+                        <div class="bg-body-tertiary border border-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 text-primary fs-3 fw-bold shadow"
+                            style="width: 80px; height: 80px;">3</div>
                         <h5 class="">Verification</h5>
                         <p class="text-muted small">Formal verification and external audits.</p>
                     </div>
                     <div class="col-md-3 text-center">
-                        <div class="bg-dark border border-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 text-primary fs-3 fw-bold shadow" style="width: 80px; height: 80px;">4</div>
+                        <div class="bg-body-tertiary border border-secondary rounded-circle d-inline-flex align-items-center justify-content-center mb-3 text-primary fs-3 fw-bold shadow"
+                            style="width: 80px; height: 80px;">4</div>
                         <h5 class="">Deployment</h5>
                         <p class="text-muted small">Secure mainnet rollout and monitoring.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="py-5 position-relative overflow-hidden text-white" style="background-image: url('assets/images/global-map.png'); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center;">
+        <section class="py-4 position-relative overflow-hidden text-white"
+            style="background-image: url('assets/images/global-map.png'); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center;">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
             <div class="container position-relative z-1">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4 mb-lg-0">
-                        <h2 class="display-5 fw-bold mb-3">Global Reach, <br><span class="text-gradient">Local Impact</span></h2>
-                        <p class="lead mb-0 text-light" style="max-width: 500px;">Deploying decentralized infrastructure across continents, connecting the world through immutable consensus.</p>
+                        <h2 class="display-5 fw-bold mb-3 text-white">Global Reach, <br><span
+                                class="text-gradient">Local Impact</span></h2>
+                        <p class="lead mb-0 text-light" style="max-width: 500px;">Deploying decentralized infrastructure
+                            across continents, connecting the world through immutable consensus.</p>
                     </div>
                     <div class="col-lg-6">
                         <div class="row g-4 text-center">
                             <div class="col-6">
-                                <div class="glass-panel p-4 rounded-4 border border-secondary border-opacity-50 h-100" style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.05);">
+                                <div class="glass-panel p-4 rounded-4 border border-secondary border-opacity-50 h-100"
+                                    style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.05);">
                                     <h2 class="display-4 fw-bold text-gradient mb-0">30+</h2>
                                     <p class="text-white-50 mb-0">Countries Reached</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="glass-panel p-4 rounded-4 border border-secondary border-opacity-50 h-100" style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.05);">
+                                <div class="glass-panel p-4 rounded-4 border border-secondary border-opacity-50 h-100"
+                                    style="backdrop-filter: blur(10px); background: rgba(255,255,255,0.05);">
                                     <h2 class="display-4 fw-bold text-gradient mb-0">$5B+</h2>
                                     <p class="text-white-50 mb-0">Volume Processed</p>
                                 </div>
@@ -290,13 +338,18 @@
             </div>
         </section>
 
-        <section class="py-5 mb-5 mt-5">
+        <section class="py-4 mb-4 mt-4">
             <div class="container">
-                <div class="glass-panel p-5 rounded-4 text-center position-relative overflow-hidden border border-primary border-opacity-25 shadow-lg">
-                    <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 opacity-25" style="background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%); z-index: -1;"></div>
+                <div
+                    class="glass-panel p-5 rounded-4 text-center position-relative overflow-hidden border border-primary border-opacity-25 shadow-lg">
+                    <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 opacity-25"
+                        style="background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%); z-index: -1;">
+                    </div>
                     <h2 class="display-6 fw-bold mb-3">Work With The Best</h2>
-                    <p class="text-muted mx-auto mb-4 lead" style="max-width: 600px;">Ready to build the future of Web3? Let's discuss your protocol's architecture and security needs.</p>
-                    <a href="contact.html" class="btn btn-primary-custom btn-lg px-5 py-3 shadow-lg rounded-pill">Book a Discovery Call</a>
+                    <p class="text-muted mx-auto mb-4 lead" style="max-width: 600px;">Ready to build the future of Web3?
+                        Let's discuss your protocol's architecture and security needs.</p>
+                    <a href="contact.html" class="btn btn-primary-custom btn-lg px-5 py-3 shadow-lg rounded-pill">Book a
+                        Discovery Call</a>
                 </div>
             </div>
         </section>
@@ -306,8 +359,8 @@
         <div class="container">
             <div class="row g-4 mb-4">
                 <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand text-gradient d-flex align-items-center gap-2 fs-4 fw-bold mb-4"
-                        href="index.html" style="padding: 0;">
+                    <a <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html"
+                        style="padding: 0;">
                         <img src="assets/logo.svg" alt="NodeX Logo" width="32" height="32">
                         NodeX
                     </a>

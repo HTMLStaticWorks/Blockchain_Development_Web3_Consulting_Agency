@@ -21,8 +21,36 @@
     </script>
     <style>
         /* Force hero text white in all themes */
-        .hero-section h1, .hero-section h2, .hero-section p { color: #ffffff !important; }
-        .hero-section h1 span:not(.text-gradient) { color: #ffffff !important; }
+        .hero-section h1,
+        .hero-section h2,
+        .hero-section p {
+            color: #ffffff !important;
+        }
+
+        .hero-section h1 span:not(.text-gradient) {
+            color: #ffffff !important;
+        }
+
+        /* Card Hover Effects */
+        .service-card,
+        .industry-card,
+        .card,
+        .bg-body-surface .col-md-4>.p-4.border.rounded,
+        .network-badge {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
+        }
+
+        .service-card:hover,
+        .industry-card:hover,
+        .card:hover,
+        .bg-body-surface .col-md-4>.p-4.border.rounded:hover,
+        .network-badge:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(13, 110, 253, 0.4), 0 0 20px rgba(13, 110, 253, 0.2) !important;
+            /* Glow effect */
+            border-color: var(--bs-primary) !important;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -31,7 +59,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand text-gradient d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">
+                <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">
                     <img src="assets/logo.svg" alt="NodeX Logo" width="32" height="32">
                     NodeX
                 </a>
@@ -92,22 +120,23 @@
         </section>
 
         <!-- Section: Trusted By / Client Logos -->
-        <section class="py-5 border-top border-bottom" style="border-color: var(--glass-border) !important;">
+        <section class="py-4 border-top border-bottom" style="border-color: var(--glass-border) !important;">
             <div class="container text-center">
-                <p class="text-muted mb-4 text-uppercase fw-semibold" style="letter-spacing: 2px;">Trusted by Innovative
-                    Companies</p>
-                <div class="d-flex justify-content-center gap-5 flex-wrap opacity-50 align-items-center">
-                    <div class="fs-4 fw-bold">Binance</div>
-                    <div class="fs-4 fw-bold">Polygon</div>
-                    <div class="fs-4 fw-bold">Chainlink</div>
-                    <div class="fs-4 fw-bold">ConsenSys</div>
-                    <div class="fs-4 fw-bold">Aave</div>
+                <h2 class="mb-4 text-uppercase fw-semibold"
+                    style="letter-spacing: 2px; font-size: clamp(1.5rem, 3vw, 2rem);">Trusted by Innovative Companies
+                </h2>
+                <div class="d-flex justify-content-center gap-5 flex-wrap align-items-center">
+                    <div class="fs-4 fw-bold" style="color: #F3BA2F;">Binance</div>
+                    <div class="fs-4 fw-bold" style="color: #8247E5;">Polygon</div>
+                    <div class="fs-4 fw-bold" style="color: #2A5ADA;">Chainlink</div>
+                    <div class="fs-4 fw-bold" style="color: #375BD2;">ConsenSys</div>
+                    <div class="fs-4 fw-bold" style="color: #B6509E;">Aave</div>
                 </div>
             </div>
         </section>
 
         <!-- Section: Services Overview -->
-        <section class="py-5 my-5">
+        <section class="py-4 my-4">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2>Our <span class="text-gradient">Services</span></h2>
@@ -155,7 +184,7 @@
         </section>
 
         <!-- Section: Why Choose Us -->
-        <section class="py-5 bg-body-surface glass-panel mx-3 mx-lg-5 mb-5 p-5">
+        <section class="py-4 bg-body-surface glass-panel mx-3 mx-lg-5 mb-4 p-5">
             <div class="container text-center">
                 <h2 class="mb-4">Why Choose Us</h2>
                 <p class="lead mb-5">We are not just developers; we are NodeX architects focused on security and scale.
@@ -187,47 +216,54 @@
         </section>
 
         <!-- Section: Blockchain Expertise -->
-        <section class="py-5 mb-5">
+        <section class="py-4 mb-4">
             <div class="container text-center">
                 <h2>Blockchain <span class="text-gradient">Networks</span> We Build On</h2>
                 <div class="d-flex justify-content-center gap-4 flex-wrap mt-5">
-                    <span class="badge bg-secondary p-3 fs-6">Ethereum</span>
-                    <span class="badge bg-secondary p-3 fs-6">Polygon</span>
-                    <span class="badge bg-secondary p-3 fs-6">Solana</span>
-                    <span class="badge bg-secondary p-3 fs-6">Base</span>
-                    <span class="badge bg-secondary p-3 fs-6">Arbitrum</span>
+                    <span class="badge bg-secondary p-3 fs-6 network-badge">Ethereum</span>
+                    <span class="badge bg-secondary p-3 fs-6 network-badge">Polygon</span>
+                    <span class="badge bg-secondary p-3 fs-6 network-badge">Solana</span>
+                    <span class="badge bg-secondary p-3 fs-6 network-badge">Base</span>
+                    <span class="badge bg-secondary p-3 fs-6 network-badge">Arbitrum</span>
                 </div>
             </div>
         </section>
 
         <!-- Section: Industries We Serve -->
-        <section class="py-5 mb-5 bg-body-tertiary">
+        <section class="py-4 mb-4 bg-body-tertiary">
             <div class="container text-center">
-                <h2 class="mb-5">Industries We Serve</h2>
+                <h2 class="mb-3">Industries We Serve</h2>
+                <p class="text-muted mb-5 mx-auto" style="max-width: 700px;">We specialize in building decentralized
+                    solutions tailored to the specific needs and regulatory requirements of various industries.</p>
                 <div class="row g-4 justify-content-center">
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">FinTech</h5>
+                        <div
+                            class="p-3 border border-secondary rounded text-center h-100 industry-card bg-body-surface">
+                            <div class="industry-title mb-0 fw-semibold text-muted fs-5">FinTech</div>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">Gaming</h5>
+                        <div
+                            class="p-3 border border-secondary rounded text-center h-100 industry-card bg-body-surface">
+                            <div class="industry-title mb-0 fw-semibold text-muted fs-5">Gaming</div>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">Healthcare</h5>
+                        <div
+                            class="p-3 border border-secondary rounded text-center h-100 industry-card bg-body-surface">
+                            <div class="industry-title mb-0 fw-semibold text-muted fs-5">Healthcare</div>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">Supply Chain</h5>
+                        <div
+                            class="p-3 border border-secondary rounded text-center h-100 industry-card bg-body-surface">
+                            <div class="industry-title mb-0 fw-semibold text-muted fs-5">Supply Chain</div>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="p-3 border border-secondary rounded text-center h-100">
-                            <h5 class="mb-0">Real Estate</h5>
+                        <div
+                            class="p-3 border border-secondary rounded text-center h-100 industry-card bg-body-surface">
+                            <div class="industry-title mb-0 fw-semibold text-muted fs-5">Real Estate</div>
                         </div>
                     </div>
                 </div>
@@ -235,59 +271,206 @@
         </section>
 
         <!-- Section: Featured Case Studies -->
-        <section class="py-5 mb-5">
+        <section class="py-4 mb-4">
             <div class="container text-center">
-                <h2>Featured Case Studies</h2>
-                <p>Discover how we've helped startups scale their NodeX visions.</p>
-                <a href="portfolio.html" class="btn btn-outline-custom mt-3">View Portfolio</a>
+                <h2 class="mb-3">Featured Case Studies</h2>
+                <p class="text-muted mb-5 mx-auto" style="max-width: 600px;">Discover how we've helped startups and
+                    enterprises scale their NodeX visions with robust, secure blockchain infrastructure and seamless
+                    user experiences.</p>
+
+                <div class="row g-4 mb-5 text-center">
+                    <!-- Case Study 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span
+                                    class="badge bg-primary bg-opacity-10 text-primary border border-primary">DeFi</span>
+                                <span class="text-muted small">2025</span>
+                            </div>
+                            <h4 class="mb-2">Nexus Protocol</h4>
+                            <p class="text-muted small mb-0">Developed a high-frequency trading DEX with sub-second
+                                finality and zero impermanent loss architecture.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-success bg-opacity-10 text-success border border-success">Supply
+                                    Chain</span>
+                                <span class="text-muted small">2025</span>
+                            </div>
+                            <h4 class="mb-2">LogisChain</h4>
+                            <p class="text-muted small mb-0">Implemented a transparent, immutable tracking system for
+                                global shipping routes, reducing fraud by 40%.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span
+                                    class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary">NFT
+                                    / Gaming</span>
+                                <span class="text-muted small">2024</span>
+                            </div>
+                            <h4 class="mb-2">Aetheria Worlds</h4>
+                            <p class="text-muted small mb-0">Built the smart contract infrastructure for a fully
+                                on-chain MMORPG supporting 100k+ active players.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study 4 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span
+                                    class="badge bg-warning bg-opacity-10 text-warning border border-warning">FinTech</span>
+                                <span class="text-muted small">2024</span>
+                            </div>
+                            <h4 class="mb-2">PayStream</h4>
+                            <p class="text-muted small mb-0">Created a cross-border payment gateway utilizing
+                                stablecoins for instant, low-fee corporate settlements.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study 5 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-info bg-opacity-10 text-info border border-info">Real
+                                    Estate</span>
+                                <span class="text-muted small">2024</span>
+                            </div>
+                            <h4 class="mb-2">PropToken</h4>
+                            <p class="text-muted small mb-0">Tokenized $50M+ in commercial real estate, enabling
+                                fractional ownership and automated dividend distribution.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study 6 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span
+                                    class="badge bg-danger bg-opacity-10 text-danger border border-danger">Healthcare</span>
+                                <span class="text-muted small">2023</span>
+                            </div>
+                            <h4 class="mb-2">MediBlock</h4>
+                            <p class="text-muted small mb-0">Architected a HIPAA-compliant decentralized network for
+                                secure, patient-controlled medical records sharing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="portfolio.html" class="btn btn-outline-custom mt-3">View Full Portfolio</a>
             </div>
         </section>
 
-        <!-- Section: Development Process -->
-        <section class="py-5 mb-5">
-            <div class="container text-center">
-                <h2>Our Development Process</h2>
-                <p class="text-muted mt-4">Discovery → Architecture → Development → Audit → Deployment → Support</p>
-            </div>
-        </section>
 
         <!-- Section: Technology Stack -->
-        <section class="py-5 mb-5 glass-panel mx-3 mx-lg-5 p-5">
+        <section class="py-4 mb-4 glass-panel mx-3 mx-lg-5 p-5">
             <div class="container text-center">
                 <h2>Our Tech Stack</h2>
-                <p class="text-muted">Solidity • Rust • React • Next.js • Node.js • Hardhat • Foundry</p>
+                <p class="text-muted">Solidity &bull; Rust &bull; React &bull; Next.js &bull; Node.js &bull; Hardhat
+                    &bull; Foundry</p>
             </div>
         </section>
 
         <!-- Section: Testimonials -->
-        <section class="py-5 mb-5">
+        <section class="py-4 mb-4">
             <div class="container text-center">
                 <h2>Client Testimonials</h2>
-                <div class="card bg-transparent border-light mx-auto mt-4" style="max-width: 600px;">
-                    <div class="card-body">
-                        <p class="fst-italic">"They understood our complex DeFi requirements immediately and delivered a
-                            highly secure, audited protocol ahead of schedule."</p>
-                        <footer class="blockquote-footer mt-2">Founder, DeFiProtocol</footer>
+                <div class="row g-4 mt-3 text-center">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface shadow-sm">
+                            <p class="fst-italic text-muted mb-4">"They understood our complex DeFi requirements
+                                immediately and delivered a highly secure, audited protocol ahead of schedule."</p>
+                            <div class="d-flex flex-column align-items-center mt-auto pt-3 border-top border-secondary">
+                                <img src="assets/images/team_1.png" alt="Client" class="rounded-circle mb-2"
+                                    style="width: 48px; height: 48px; object-fit: cover;">
+                                <div>
+                                    <div class="fw-bold fs-6">Alex Chen</div>
+                                    <small class="text-muted">Founder, DeFiProtocol</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface shadow-sm">
+                            <p class="fst-italic text-muted mb-4">"The team's deep knowledge of zero-knowledge proofs
+                                allowed us to scale our Layer-2 solution seamlessly without sacrificing security."</p>
+                            <div class="d-flex flex-column align-items-center mt-auto pt-3 border-top border-secondary">
+                                <img src="assets/images/team_2.png" alt="Client" class="rounded-circle mb-2"
+                                    style="width: 48px; height: 48px; object-fit: cover;">
+                                <div>
+                                    <div class="fw-bold fs-6">Sarah Jenkins</div>
+                                    <small class="text-muted">CTO, ZKRollupsInc</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-secondary bg-body-surface shadow-sm">
+                            <p class="fst-italic text-muted mb-4">"Their rigorous auditing process caught multiple
+                                vulnerabilities before mainnet launch. A truly professional and expert agency."</p>
+                            <div class="d-flex flex-column align-items-center mt-auto pt-3 border-top border-secondary">
+                                <img src="assets/images/team-ceo.png" alt="Client" class="rounded-circle mb-2"
+                                    style="width: 48px; height: 48px; object-fit: cover;">
+                                <div>
+                                    <div class="fw-bold fs-6">David Kim</div>
+                                    <small class="text-muted">CEO, Web3Gaming</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Section: Latest Insights -->
-        <section class="py-5 mb-5">
+        <section class="py-4 mb-4">
             <div class="container text-center">
                 <h2>Latest Insights</h2>
-                <p>Expert knowledge on NodeX development, security, and strategy.</p>
-                <a href="blog.html" class="btn btn-outline-custom mt-3">Read Our Blog</a>
-            </div>
-        </section>
+                <p class="text-muted">Expert knowledge on NodeX development, security, and strategy.</p>
 
-        <!-- Section: Call to Action -->
-        <section class="py-5 mb-5 bg-gradient-primary text-white text-center rounded-3 mx-3 mx-lg-5 p-5 shadow-lg">
-            <div class="container">
-                <h2 class="text-white mb-4">Ready to Build Your NodeX Vision?</h2>
-                <p class="lead mb-4 text-white">Schedule a discovery call with our blockchain architects today.</p>
-                <a href="contact.html" class="btn btn-light btn-lg fw-bold text-primary">Book a Discovery Call</a>
+                <div class="row g-4 mt-3 text-center mb-5">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-secondary bg-body-surface overflow-hidden shadow-sm">
+                            <img src="assets/images/insight_defi_security.png" class="card-img-top"
+                                alt="Smart Contracts" style="height: 180px; object-fit: cover;">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="card-title fw-bold">Securing DeFi Protocols</h5>
+                                <p class="card-text text-muted small flex-grow-1">Learn about the latest vulnerabilities
+                                    in lending protocols and how formal verification can prevent multi-million dollar
+                                    exploits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-secondary bg-body-surface overflow-hidden shadow-sm">
+                            <img src="assets/images/insight_layer2_scaling.png" class="card-img-top" alt="dApps"
+                                style="height: 180px; object-fit: cover;">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="card-title fw-bold">The Future of Layer-2</h5>
+                                <p class="card-text text-muted small flex-grow-1">A deep dive into Optimistic vs. ZK
+                                    Rollups and how they are shaping the scalability of the Ethereum network for
+                                    enterprise adoption.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-secondary bg-body-surface overflow-hidden shadow-sm">
+                            <img src="assets/images/insight_tokenomics.png" class="card-img-top" alt="Consulting"
+                                style="height: 180px; object-fit: cover;">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="card-title fw-bold">Tokenomics 101</h5>
+                                <p class="card-text text-muted small flex-grow-1">Designing sustainable economic models
+                                    for Web3 gaming economies that incentivize long-term player retention and value
+                                    creation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="blog.html" class="btn btn-outline-custom">Read All Our Blog</a>
             </div>
         </section>
     </main>
@@ -297,8 +480,8 @@
         <div class="container">
             <div class="row g-4 mb-4">
                 <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand text-gradient d-flex align-items-center gap-2 fs-4 fw-bold mb-4"
-                        href="index.html" style="padding: 0;">
+                    <a <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html"
+                        style="padding: 0;">
                         <img src="assets/logo.svg" alt="NodeX Logo" width="32" height="32">
                         NodeX
                     </a>

@@ -5,10 +5,10 @@ dir_path = "e:/OfficeDownloads_/MayJuneWebsite/Blockchain_Development_Web3_Consu
 files = glob.glob(os.path.join(dir_path, "*.html"))
 
 target_footer = '<h3 class="text-gradient mb-4">NodeX</h3>'
-replace_footer = '<a class="navbar-brand text-gradient d-flex align-items-center gap-2 fs-4 fw-bold mb-4" href="index.html" style="padding: 0;">\n                        <img src="assets/logo.svg" alt="NodeX Logo" width="32" height="32">\n                        NodeX\n                    </a>'
+replace_footer = '<a <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html" style="padding: 0;">\n                        <img src="assets/logo.svg" alt="NodeX Logo" width="32" height="32">\n                        NodeX\n                    </a>'
 
 target_header = '<a class="navbar-brand text-gradient d-flex align-items-center gap-2" href="index.html">'
-replace_header = '<a class="navbar-brand text-gradient d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">'
+replace_header = '<a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">'
 
 for file in files:
     with open(file, 'r', encoding='utf-8') as f:

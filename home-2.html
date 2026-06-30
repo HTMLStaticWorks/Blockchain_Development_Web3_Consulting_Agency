@@ -36,7 +36,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container position-relative z-1 text-white">
-                <a class="navbar-brand text-gradient d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">
+                <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">
                     <img src="assets/logo.svg" alt="NodeX Logo" width="32" height="32">
                     NodeX
                 </a>
@@ -99,20 +99,44 @@
         </section>
 
         <!-- Section: Company Highlights & Core Capabilities -->
-        <section class="py-5 mb-5 container">
+        <section class="py-4 mb-4 container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
                     <h2 class="mb-4">Core Capabilities</h2>
                     <p class="text-muted mb-4">We bridge the gap between complex blockchain infrastructure and seamless
                         user experiences.</p>
-                    <ul class="list-group list-group-flush bg-transparent">
-                        <li class="list-group-item bg-transparent border-secondary">✓ Secure Smart Contract
-                            Development</li>
-                        <li class="list-group-item bg-transparent border-secondary">✓ L1/L2 Protocol
-                            Integration</li>
-                        <li class="list-group-item bg-transparent border-secondary">✓ DeFi & Yield Mechanisms
+                    <ul class="list-group list-group-flush bg-transparent text-start mt-3 p-0 m-0">
+                        <li class="list-group-item bg-transparent border-secondary d-flex align-items-center px-0 py-3">
+                            <svg class="text-primary flex-shrink-0 me-3" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                            </svg>
+                            <span class="text-muted">Secure Smart Contract Development</span>
                         </li>
-                        <li class="list-group-item bg-transparent border-secondary">✓ NodeX Security Audits
+                        <li class="list-group-item bg-transparent border-secondary d-flex align-items-center px-0 py-3">
+                            <svg class="text-primary flex-shrink-0 me-3" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                            </svg>
+                            <span class="text-muted">L1/L2 Protocol Integration</span>
+                        </li>
+                        <li class="list-group-item bg-transparent border-secondary d-flex align-items-center px-0 py-3">
+                            <svg class="text-primary flex-shrink-0 me-3" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                            </svg>
+                            <span class="text-muted">DeFi & Yield Mechanisms</span>
+                        </li>
+                        <li class="list-group-item bg-transparent border-secondary d-flex align-items-center px-0 py-3">
+                            <svg class="text-primary flex-shrink-0 me-3" width="20" height="20" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                            </svg>
+                            <span class="text-muted">NodeX Security Audits</span>
                         </li>
                     </ul>
                 </div>
@@ -135,7 +159,7 @@
         </section>
 
         <!-- Section: Featured Projects -->
-        <section class="py-5 bg-body-tertiary">
+        <section class="py-4 bg-body-tertiary">
             <div class="container text-center">
                 <h2 class="mb-5">Featured Projects</h2>
                 <div class="row g-4 mb-5 text-center">
@@ -166,35 +190,57 @@
         </section>
 
         <!-- Section: Security First & Development Workflow -->
-        <section class="py-5 mb-5 overflow-hidden">
-            <div class="container">
-                <div class="row g-5 align-items-center">
+        <section class="py-4 mb-4 overflow-hidden">
+            <div class="container text-center">
+                <div class="mb-5">
+                    <img src="assets/images/security.png" alt="Security First Illustration"
+                        class="img-fluid rounded-4 shadow-lg border border-secondary"
+                        style="max-height: 500px; object-fit: cover; width: 100%;">
+                </div>
+                <div class="row g-5 text-center">
                     <div class="col-lg-6">
-                        <img src="assets/images/security.png" alt="Security First Illustration" class="img-fluid rounded-4 shadow-lg border border-secondary" style="max-height: 500px; object-fit: cover; width: 100%;">
+                        <div class="h-100">
+                            <h2 class="mb-4">Security First</h2>
+                            <p class="text-muted lead">Every line of code is rigorously tested, formally verified, and
+                                audited by independent security experts before it ever reaches mainnet.</p>
+                            <div class="d-inline-block text-start mt-3">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex align-items-center mb-3 text-muted">
+                                        <svg class="text-primary me-2" width="20" height="20" fill="currentColor"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        Multi-stage formal verification
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3 text-muted">
+                                        <svg class="text-primary me-2" width="20" height="20" fill="currentColor"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        Automated vulnerability scanning
+                                    </li>
+                                    <li class="d-flex align-items-center text-muted">
+                                        <svg class="text-primary me-2" width="20" height="20" fill="currentColor"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                        </svg>
+                                        Partnerships with leading audit firms
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="mb-5">
-                            <h2 class="mb-4">Security First</h2>
-                            <p class="text-muted lead">Every line of code is rigorously tested, formally verified, and audited by independent security experts before it ever reaches mainnet.</p>
-                            <ul class="list-unstyled mt-4">
-                                <li class="d-flex align-items-center mb-3 text-muted">
-                                    <svg class="text-primary me-2" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/></svg>
-                                    Multi-stage formal verification
-                                </li>
-                                <li class="d-flex align-items-center mb-3 text-muted">
-                                    <svg class="text-primary me-2" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/></svg>
-                                    Automated vulnerability scanning
-                                </li>
-                                <li class="d-flex align-items-center text-muted">
-                                    <svg class="text-primary me-2" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/></svg>
-                                    Partnerships with leading audit firms
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="mb-3">Development Workflow</h3>
-                            <p class="text-muted">Agile methodologies tailored for immutable codebases. We blend the speed of modern web development with the rigor required for mission-critical financial software.</p>
-                            <a href="services.html" class="btn btn-outline-primary mt-3">Learn About Our Process</a>
+                        <div class="h-100">
+                            <h2 class="mb-4">Development Workflow</h2>
+                            <p class="text-muted lead">Agile methodologies tailored for immutable codebases. We blend
+                                the
+                                speed of modern web development with the rigor required for mission-critical financial
+                                software.</p>
+                            <a href="services.html" class="btn btn-outline-primary mt-4">Learn About Our Process</a>
                         </div>
                     </div>
                 </div>
@@ -202,28 +248,34 @@
         </section>
 
         <!-- Section: Team Preview -->
-        <section class="py-5 mb-5 bg-body-tertiary">
+        <section class="py-4 mb-4 bg-body-tertiary">
             <div class="container text-center">
                 <h2 class="mb-4">Meet the Architects</h2>
                 <p class="text-muted mb-5">Led by veterans of the Ethereum and Solana ecosystems.</p>
                 <div class="row g-4 justify-content-center mb-5">
                     <div class="col-md-4">
-                        <div class="card border-secondary bg-transparent h-100 overflow-hidden text-center rounded-4 shadow-sm">
-                            <img src="assets/images/team_1.png" alt="Chief Architect" class="card-img-top" style="height: 300px; object-fit: cover; object-position: top;">
+                        <div
+                            class="card border-secondary bg-transparent h-100 overflow-hidden text-center rounded-4 shadow-sm">
+                            <img src="assets/images/team_1.png" alt="Chief Architect" class="card-img-top"
+                                style="height: 300px; object-fit: cover; object-position: top;">
                             <div class="card-body p-4">
                                 <h4 class="card-title text-primary">Alex Mercer</h4>
-                                <h6 class="card-subtitle mb-3 text-muted">Chief Blockchain Architect</h6>
-                                <p class="card-text text-muted small">Former Ethereum Foundation researcher specializing in ZK-rollups and scalable L2 solutions.</p>
+                                <h6 class="card-subtitle mb-3 text-muted">The Chief Blockchain Architect</h6>
+                                <p class="card-text text-muted small">Former Ethereum Foundation researcher specializing
+                                    in ZK-rollups and scalable L2 solutions.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card border-secondary bg-transparent h-100 overflow-hidden text-center rounded-4 shadow-sm">
-                            <img src="assets/images/team_2.png" alt="Head of Security" class="card-img-top" style="height: 300px; object-fit: cover; object-position: top;">
+                        <div
+                            class="card border-secondary bg-transparent h-100 overflow-hidden text-center rounded-4 shadow-sm">
+                            <img src="assets/images/team_2.png" alt="Head of Security" class="card-img-top"
+                                style="height: 300px; object-fit: cover; object-position: top;">
                             <div class="card-body p-4">
                                 <h4 class="card-title text-primary">Sarah Jenkins</h4>
                                 <h6 class="card-subtitle mb-3 text-muted">Head of Smart Contract Security</h6>
-                                <p class="card-text text-muted small">Lead auditor with a track record of securing over $1.5B in Total Value Locked across DeFi protocols.</p>
+                                <p class="card-text text-muted small">Lead auditor with a track record of securing over
+                                    $1.5B in Total Value Locked across DeFi protocols.</p>
                             </div>
                         </div>
                     </div>
@@ -233,50 +285,38 @@
         </section>
 
         <!-- Section: FAQ -->
-        <section class="py-5 mb-5 bg-body-tertiary">
+        <section class="py-4 mb-4 bg-body-tertiary">
             <div class="container text-center">
                 <h2 class="mb-5">Frequently Asked Questions</h2>
-                <div class="accordion mx-auto text-start" id="faqAccordion" style="max-width: 800px;">
-                    <div class="accordion-item bg-transparent border-secondary mb-3 rounded">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed bg-transparent" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#faq1">
-                                What blockchain networks do you support?
-                            </button>
-                        </h2>
-                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted">
-                                We specialize in EVM-compatible networks like Ethereum, Polygon, Base, and Arbitrum, as
-                                well as high-throughput chains like Solana.
-                            </div>
+                <div class="row g-4 mx-auto text-start">
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border-secondary h-100 p-3">
+                            <h5 class="text-primary mb-3">What blockchain networks do you support?</h5>
+                            <p class="text-muted mb-0">We specialize in EVM-compatible networks like Ethereum, Polygon,
+                                Base, and Arbitrum, as well as high-throughput chains like Solana.</p>
                         </div>
                     </div>
-                    <div class="accordion-item bg-transparent border-secondary mb-3 rounded">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed bg-transparent" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#faq2">
-                                How do you ensure smart contract security?
-                            </button>
-                        </h2>
-                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted">
-                                We employ a rigorous security-first approach, utilizing unit testing, static analysis,
-                                formal verification, and multi-stage audits by top-tier security firms before any
-                                mainnet deployment.
-                            </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border-secondary h-100 p-3">
+                            <h5 class="text-primary mb-3">How do you ensure smart contract security?</h5>
+                            <p class="text-muted mb-0">We employ a rigorous security-first approach, utilizing unit
+                                testing, static analysis, formal verification, and multi-stage audits by top-tier
+                                security firms before any mainnet deployment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border-secondary h-100 p-3">
+                            <h5 class="text-primary mb-3">What is your typical project timeline?</h5>
+                            <p class="text-muted mb-0">Project timelines vary based on complexity, but most
+                                implementations take between 4 to 12 weeks, including development, testing, and
+                                comprehensive audits.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section: CTA -->
-        <section class="py-5 mb-5 text-center">
-            <div class="container">
-                <h2 class="mb-4">Let's Discuss Your Project</h2>
-                <a href="contact.html" class="btn btn-primary-custom btn-lg">Book a Discovery Call</a>
-            </div>
-        </section>
+
 
     </main>
 
@@ -285,8 +325,8 @@
         <div class="container">
             <div class="row g-4 mb-4">
                 <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand text-gradient d-flex align-items-center gap-2 fs-4 fw-bold mb-4"
-                        href="index.html" style="padding: 0;">
+                    <a <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html"
+                        style="padding: 0;">
                         <img src="assets/logo.svg" alt="NodeX Logo" width="32" height="32">
                         NodeX
                     </a>
