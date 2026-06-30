@@ -1,5 +1,5 @@
 /**
- * Blockchain Development & Web3 Consulting Agency - Main JavaScript
+ * Blockchain Development & NodeX Consulting Agency - Main JavaScript
  */
 
 document.addEventListener('DOMContentLoaded', () => {

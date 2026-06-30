@@ -14,7 +14,7 @@ specific_replacements = {
     "Our Story": """<div class="row g-4 align-items-center text-start">
                     <div class="col-lg-6">
                         <h2 class="text-center text-lg-start">Our Story</h2>
-                        <p class="text-muted mt-4">NodeX was founded with a single mission: to provide enterprise-grade security and scalability to the Web3 ecosystem. From early days in Bitcoin and Ethereum communities, our founders recognized the need for professional, institutional-level development practices in the decentralized space.</p>
+                        <p class="text-muted mt-4">NodeX was founded with a single mission: to provide enterprise-grade security and scalability to the NodeX ecosystem. From early days in Bitcoin and Ethereum communities, our founders recognized the need for professional, institutional-level development practices in the decentralized space.</p>
                         <p class="text-muted">Today, we are a global team of cryptographers, architects, and engineers dedicated to building robust decentralized applications that stand the test of time.</p>
                     </div>
                     <div class="col-lg-6">
