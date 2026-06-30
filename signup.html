@@ -8,11 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css?v=2">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
     <script>
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             document.documentElement.setAttribute('data-bs-theme', savedTheme);
+        }
+        const savedDir = localStorage.getItem('dir');
+        if (savedDir) {
+            document.documentElement.setAttribute('dir', savedDir);
         }
     </script>
     <style>
@@ -35,6 +40,11 @@
             right: auto;
             left: 15px;
         }
+
+        [dir="rtl"] .end-0 {
+            right: auto !important;
+            left: 0 !important;
+        }
     </style>
 </head>
 
@@ -42,7 +52,7 @@
     <!-- Top Right Controls -->
     <div class="position-absolute top-0 end-0 p-3 d-flex gap-2 z-3">
         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-2"
-            onclick="document.documentElement.setAttribute('dir', document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl')"
+            onclick="let target = document.documentElement.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl'; document.documentElement.setAttribute('dir', target); localStorage.setItem('dir', target);"
             title="Toggle RTL">RTL</button>
         <button class="btn btn-outline-custom d-flex align-items-center justify-content-center px-3"
             onclick="let target = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-bs-theme', target); localStorage.setItem('theme', target);"
@@ -135,9 +145,8 @@
                         class="btn btn-outline-secondary w-50 d-flex align-items-center justify-content-center gap-2"
                         type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-google" viewBox="0 0 16 16">
-                            <path
-                                d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                            class="bi bi-google" viewBox="0 0 488 512">
+                            <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
                         </svg>
                         Google
                     </button>
@@ -145,9 +154,8 @@
                         class="btn btn-outline-secondary w-50 d-flex align-items-center justify-content-center gap-2"
                         type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-apple" viewBox="0 0 16 16">
-                            <path
-                                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-1.082-.04-2.05.328-2.535.328-.485 0-1.42-.434-2.46-.434-.96 0-2.03.328-2.835 1.258-1.066 1.218-1.748 3.32-1.748 5.765 0 1.234.238 2.628.717 3.824.479 1.195 1.132 2.114 1.706 2.114.575 0 1.018-.433 2.148-.433 1.13 0 1.536.433 2.148.433.613 0 1.132-.919 1.611-2.114.479-1.196.885-2.062.885-2.062a4.672 4.672 0 0 1-.723-1.026z" />
+                            class="bi bi-apple" viewBox="0 0 384 512">
+                            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
                         </svg>
                         Apple
                     </button>
