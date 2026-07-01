@@ -187,7 +187,8 @@ p {
 
 /* Navigation */
 header .nav-link,
-header .btn {
+header .btn,
+.position-absolute.top-0.end-0 .btn {
     font-size: 0.9rem !important;
 }
 
@@ -214,18 +215,26 @@ header .btn {
     transform: translateY(-2px);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .navbar-nav .nav-link.active {
         width: 50%;
     }
 
     .navbar-nav .nav-link {
-        padding-top: 0.3rem !important;
-        padding-bottom: 0.3rem !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
     }
 
     .navbar-nav .nav-item {
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-nav {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .navbar-collapse {
+        padding-bottom: 1rem;
     }
 }
 
@@ -282,7 +291,7 @@ header .btn {
 }
 
 /* Convert exactly 3-card (col-md-4) rows into 2+1 centered layout */
-@media (min-width: 768px) {
+@media (min-width: 600px) and (max-width: 1100px) {
     .row:has(> .col-md-4:first-child:nth-last-child(3)) {
         justify-content: center;
     }

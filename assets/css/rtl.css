@@ -57,3 +57,16 @@ Blockchain Development & NodeX Consulting Agency - RTL Styles
 [dir="rtl"] .text-end {
   text-align: left !important;
 }
+
+/* Form Checkbox RTL Overrides */
+[dir="rtl"] .form-check {
+  padding-left: 0 !important;
+  padding-right: 1.5em !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] .form-check .form-check-input {
+  float: right !important;
+  margin-left: 0 !important;
+  margin-right: -1.5em !important;
+}
