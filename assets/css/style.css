@@ -295,9 +295,9 @@ header .btn,
     .row:has(> .col-md-4:first-child:nth-last-child(3)) {
         justify-content: center;
     }
-    
-    .row > .col-md-4:first-child:nth-last-child(3),
-    .row > .col-md-4:first-child:nth-last-child(3) ~ .col-md-4 {
+
+    .row>.col-md-4:first-child:nth-last-child(3),
+    .row>.col-md-4:first-child:nth-last-child(3)~.col-md-4 {
         flex: 0 0 auto;
         width: 50%;
     }
@@ -407,11 +407,18 @@ header .btn,
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
+        right: 0;
+        width: auto;
         background-color: var(--color-bg-base);
-        padding: 1rem;
+        padding-left: 2rem;
         border-bottom: 1px solid var(--glass-border);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         z-index: 1050;
+    }
+
+    .navbar-collapse .d-flex {
+        justify-content: flex-start !important;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
     }
 }
