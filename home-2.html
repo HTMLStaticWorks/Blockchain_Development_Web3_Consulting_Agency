@@ -107,7 +107,7 @@
         <section class="py-4 mb-4 container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6">
-                    <h2 class="mb-4">Core Capabilities</h2>
+                    <h2 class="mb-4 fw-bold">Core <span class="text-gradient">Capabilities</span></h2>
                     <p class="text-muted mb-4">We bridge the gap between complex blockchain infrastructure and seamless
                         user experiences.</p>
                     <ul class="list-group list-group-flush bg-transparent text-start mt-3 p-0 m-0">
@@ -166,7 +166,7 @@
         <!-- Section: Featured Projects -->
         <section class="py-4 bg-body-tertiary">
             <div class="container text-center">
-                <h2 class="mb-5">Featured Projects</h2>
+                <h2 class="mb-5 text-center fw-bold">Featured <span class="text-gradient">Projects</span></h2>
                 <div class="row g-4 mb-5 text-center">
                     <div class="col-md-4 d-flex">
                         <div class="card bg-transparent border-secondary w-100 h-100 p-3">
@@ -205,7 +205,7 @@
                 <div class="row g-5 text-center">
                     <div class="col-lg-6">
                         <div class="h-100">
-                            <h2 class="mb-4">Security First</h2>
+                            <h2 class="mb-4 fw-bold">Security <span class="text-gradient">First</span></h2>
                             <p class="text-muted lead">Every line of code is rigorously tested, formally verified, and
                                 audited by independent security experts before it ever reaches mainnet.</p>
                             <div class="d-inline-block text-start mt-3">
@@ -240,7 +240,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="h-100">
-                            <h2 class="mb-4">Development Workflow</h2>
+                            <h2 class="mb-4 fw-bold">Development <span class="text-gradient">Workflow</span></h2>
                             <p class="text-muted lead">Agile methodologies tailored for immutable codebases. We blend
                                 the
                                 speed of modern web development with the rigor required for mission-critical financial
@@ -255,7 +255,7 @@
         <!-- Section: Team Preview -->
         <section class="py-4 mb-4 bg-body-tertiary">
             <div class="container text-center">
-                <h2 class="mb-4">Meet the Architects</h2>
+                <h2 class="mb-5 text-center fw-bold">Meet the <span class="text-gradient">Architects</span></h2>
                 <p class="text-muted mb-5">Led by veterans of the Ethereum and Solana ecosystems.</p>
                 <div class="row g-4 justify-content-center mb-5">
                     <div class="col-md-4">
@@ -291,30 +291,49 @@
 
         <!-- Section: FAQ -->
         <section class="py-4 mb-4 bg-body-tertiary">
-            <div class="container text-center">
-                <h2 class="mb-5">Frequently Asked Questions</h2>
-                <div class="row g-4 mx-auto text-start">
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border-secondary h-100 p-3">
-                            <h5 class="text-primary mb-3">What blockchain networks do you support?</h5>
-                            <p class="text-muted mb-0">We specialize in EVM-compatible networks like Ethereum, Polygon,
-                                Base, and Arbitrum, as well as high-throughput chains like Solana.</p>
+            <div class="container">
+                <h2 class="mb-5 text-center fw-bold">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <div class="accordion accordion-flush mx-auto" id="faqAccordion" style="max-width: 800px;">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq-collapseOne" aria-expanded="false" aria-controls="faq-collapseOne">
+                                What blockchain networks do you support?
+                            </button>
+                        </h2>
+                        <div id="faq-collapseOne" class="accordion-collapse collapse" aria-labelledby="faq-headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                We specialize in EVM-compatible networks like Ethereum, Polygon, Base, and Arbitrum, as well as high-throughput chains like Solana.
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border-secondary h-100 p-3">
-                            <h5 class="text-primary mb-3">How do you ensure smart contract security?</h5>
-                            <p class="text-muted mb-0">We employ a rigorous security-first approach, utilizing unit
-                                testing, static analysis, formal verification, and multi-stage audits by top-tier
-                                security firms before any mainnet deployment.</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="faq-collapseTwo">
+                                How do you ensure smart contract security?
+                            </button>
+                        </h2>
+                        <div id="faq-collapseTwo" class="accordion-collapse collapse" aria-labelledby="faq-headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                We employ a rigorous security-first approach, utilizing unit testing, static analysis, formal verification, and multi-stage audits by top-tier security firms before any mainnet deployment.
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border-secondary h-100 p-3">
-                            <h5 class="text-primary mb-3">What is your typical project timeline?</h5>
-                            <p class="text-muted mb-0">Project timelines vary based on complexity, but most
-                                implementations take between 4 to 12 weeks, including development, testing, and
-                                comprehensive audits.</p>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="faq-collapseThree">
+                                What is your typical project timeline?
+                            </button>
+                        </h2>
+                        <div id="faq-collapseThree" class="accordion-collapse collapse" aria-labelledby="faq-headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Project timelines vary based on complexity, but most implementations take between 4 to 12 weeks, including development, testing, and comprehensive audits.
+                            </div>
                         </div>
                     </div>
                 </div>

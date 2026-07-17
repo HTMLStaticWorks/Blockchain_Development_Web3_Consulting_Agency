@@ -422,3 +422,36 @@ header .btn,
         padding-right: 2rem;
     }
 }
+
+/* Custom Accordion overrides for Glassmorphism alignment */
+.accordion-item {
+    background-color: transparent !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: var(--radius-md) !important;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.accordion-button {
+    background-color: transparent !important;
+    color: var(--color-text-main) !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: none !important;
+    padding: 1.25rem 1.5rem;
+    transition: color 0.2s ease;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--color-primary) !important;
+    border-bottom: 1px solid var(--glass-border) !important;
+}
+.accordion-button::after {
+    filter: var(--accordion-arrow-filter, none);
+    transition: transform 0.2s ease;
+}
+[data-bs-theme="dark"] .accordion-button::after {
+    filter: invert(1) hue-rotate(180deg);
+}
+.accordion-body {
+    padding: 1.25rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.02) !important;
+}

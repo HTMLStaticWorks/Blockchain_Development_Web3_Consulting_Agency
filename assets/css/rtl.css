@@ -158,3 +158,13 @@ Blockchain Development & NodeX Consulting Agency - RTL Styles
   margin-left: 0 !important;
   margin-right: -1.5em !important;
 }
+
+/* Accordion RTL Overrides */
+[dir="rtl"] .accordion-button {
+  text-align: right !important;
+}
+
+[dir="rtl"] .accordion-button::after {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
