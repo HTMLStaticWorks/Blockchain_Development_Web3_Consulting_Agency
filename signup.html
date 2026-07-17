@@ -102,25 +102,20 @@
                 font-size: 1.75rem !important;
             }
         }
-        .btn-google {
-            background-color: #4285F4 !important;
-            color: #ffffff !important;
-            border-color: #4285F4 !important;
-            transition: background-color 0.2s ease, border-color 0.2s ease;
-        }
-        .btn-google:hover {
-            background-color: #357ae8 !important;
-            border-color: #357ae8 !important;
-        }
+        .btn-google,
         .btn-apple {
-            background-color: #000000 !important;
+            background-color: var(--color-primary) !important;
             color: #ffffff !important;
-            border-color: #000000 !important;
-            transition: background-color 0.2s ease, border-color 0.2s ease;
+            border-color: var(--color-primary) !important;
+            transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         }
+        .btn-google:hover,
         .btn-apple:hover {
-            background-color: #222222 !important;
-            border-color: #222222 !important;
+            background-color: var(--color-secondary) !important;
+            border-color: var(--color-secondary) !important;
+            color: #ffffff !important;
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
         }
     </style>
 </head>
