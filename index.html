@@ -56,6 +56,101 @@
             border-color: var(--bs-primary) !important;
             z-index: 1;
         }
+
+        /* Trusted By Logo Cards */
+        .logo-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--color-text-muted);
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo-card svg {
+            transition: transform 0.4s ease, fill 0.4s ease;
+            fill: var(--color-text-muted);
+        }
+
+        .logo-card span {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: color 0.4s ease;
+        }
+
+        /* Hover Styles per Brand */
+        .logo-card-binance:hover {
+            border-color: rgba(243, 186, 47, 0.4) !important;
+            box-shadow: 0 10px 25px rgba(243, 186, 47, 0.15), 0 0 15px rgba(243, 186, 47, 0.05) !important;
+            transform: translateY(-5px);
+        }
+        .logo-card-binance:hover svg {
+            fill: #F3BA2F !important;
+            transform: scale(1.1);
+        }
+        .logo-card-binance:hover span {
+            color: #F3BA2F !important;
+        }
+
+        .logo-card-polygon:hover {
+            border-color: rgba(130, 71, 229, 0.4) !important;
+            box-shadow: 0 10px 25px rgba(130, 71, 229, 0.15), 0 0 15px rgba(130, 71, 229, 0.05) !important;
+            transform: translateY(-5px);
+        }
+        .logo-card-polygon:hover svg {
+            fill: #8247E5 !important;
+            transform: scale(1.1);
+        }
+        .logo-card-polygon:hover span {
+            color: #8247E5 !important;
+        }
+
+        .logo-card-chainlink:hover {
+            border-color: rgba(42, 90, 218, 0.4) !important;
+            box-shadow: 0 10px 25px rgba(42, 90, 218, 0.15), 0 0 15px rgba(42, 90, 218, 0.05) !important;
+            transform: translateY(-5px);
+        }
+        .logo-card-chainlink:hover svg {
+            fill: #2A5ADA !important;
+            transform: scale(1.1);
+        }
+        .logo-card-chainlink:hover span {
+            color: #2A5ADA !important;
+        }
+
+        .logo-card-consensys:hover {
+            border-color: rgba(55, 91, 210, 0.4) !important;
+            box-shadow: 0 10px 25px rgba(55, 91, 210, 0.15), 0 0 15px rgba(55, 91, 210, 0.05) !important;
+            transform: translateY(-5px);
+        }
+        .logo-card-consensys:hover svg {
+            fill: #375BD2 !important;
+            transform: scale(1.1);
+        }
+        .logo-card-consensys:hover span {
+            color: #375BD2 !important;
+        }
+
+        .logo-card-aave:hover {
+            border-color: rgba(182, 80, 158, 0.4) !important;
+            box-shadow: 0 10px 25px rgba(182, 80, 158, 0.15), 0 0 15px rgba(182, 80, 158, 0.05) !important;
+            transform: translateY(-5px);
+        }
+        .logo-card-aave:hover svg {
+            fill: #B6509E !important;
+            transform: scale(1.1);
+        }
+        .logo-card-aave:hover span {
+            color: #B6509E !important;
+        }
     </style>
 </head>
 
@@ -125,17 +220,47 @@
         </section>
 
         <!-- Section: Trusted By / Client Logos -->
-        <section class="py-4 border-top border-bottom" style="border-color: var(--glass-border) !important;">
+        <section class="py-5 border-top border-bottom" style="border-color: var(--glass-border) !important; background: linear-gradient(180deg, rgba(59, 130, 246, 0.02) 0%, rgba(139, 92, 246, 0.02) 100%);">
             <div class="container text-center">
                 <h2 class="mb-4 text-uppercase fw-bold text-center"
-                    style="letter-spacing: 2px; font-size: clamp(1.5rem, 3vw, 2rem);">Trusted by <span class="text-gradient">Innovative Companies</span>
+                    style="letter-spacing: 2px; font-size: clamp(1.25rem, 2.5vw, 1.75rem); color: var(--color-text-muted); opacity: 0.85;">Trusted by <span class="text-gradient">Innovative Companies</span>
                 </h2>
-                <div class="d-flex justify-content-center gap-5 flex-wrap align-items-center">
-                    <div class="fs-4 fw-bold" style="color: #F3BA2F;">Binance</div>
-                    <div class="fs-4 fw-bold" style="color: #8247E5;">Polygon</div>
-                    <div class="fs-4 fw-bold" style="color: #2A5ADA;">Chainlink</div>
-                    <div class="fs-4 fw-bold" style="color: #375BD2;">ConsenSys</div>
-                    <div class="fs-4 fw-bold" style="color: #B6509E;">Aave</div>
+                <div class="d-flex justify-content-center gap-4 flex-wrap align-items-center mt-4">
+                    <!-- Binance -->
+                    <div class="logo-card logo-card-binance">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M16.624 13.9202l-4.624 4.624-4.624-4.624-1.921 1.921 6.545 6.545 6.545-6.545-1.921-1.921zm4.624-4.624l2.752 2.752-2.752 2.752-2.752-2.752 2.752-2.752zm-18.496 0l2.752 2.752-2.752 2.752-2.752-2.752 2.752-2.752zm9.248-9.248l6.545 6.545-1.921 1.921-4.624-4.624-4.624 4.624-1.921-1.921 6.545-6.545zm0 9.248l2.752 2.752-2.752 2.752-2.752-2.752 2.752-2.752z"/>
+                        </svg>
+                        <span>Binance</span>
+                    </div>
+                    <!-- Polygon -->
+                    <div class="logo-card logo-card-polygon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M16.48 5.48L12 2.86 7.52 5.48v5.24L12 13.34l4.48-2.62V5.48zm-4.48 5.61L9.12 9.48v-2.8l2.88 1.66v3.25zm1-3.25l2.88-1.66v2.8L13 9.48v-3.25zm6.52 7.15l-4.48-2.62-4.48 2.62v5.24l4.48 2.62 4.48-2.62v-5.24zm-4.48 5.61l-2.88-1.66v-2.8l2.88 1.66v3.25zm1-3.25l2.88-1.66v2.8l-2.88 1.66v-3.25z"/>
+                        </svg>
+                        <span>Polygon</span>
+                    </div>
+                    <!-- Chainlink -->
+                    <div class="logo-card logo-card-chainlink">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2.25L3.25 7.3v9.4L12 21.75l8.75-5.05v-9.4L12 2.25zm6.5 13.25l-6.5 3.75-6.5-3.75V8.5l6.5-3.75 6.5 3.75v7zM12 7l-4 2.3v5.4l4 2.3 4-2.3V9.3L12 7z"/>
+                        </svg>
+                        <span>Chainlink</span>
+                    </div>
+                    <!-- ConsenSys -->
+                    <div class="logo-card logo-card-consensys">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 1.5L3 7.5v9l9 6 9-6v-9l-9-6zm7.5 14.25L12 20.25l-7.5-4.5V8.25L12 3.75l7.5 4.5v7.5zM12 6.75l-5.25 3.15v4.2L12 17.25l5.25-3.15v-4.2L12 6.75z"/>
+                        </svg>
+                        <span>ConsenSys</span>
+                    </div>
+                    <!-- Aave -->
+                    <div class="logo-card logo-card-aave">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.08 1.4 5.84 3.6 6.7L4 22l4.3-1.4c1.1.4 2.3.6 3.7.6 5.52 0 10-4.48 10-10S17.52 2 12 2zm-3 8.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5 0 1.5 1.5c0 .83-.67 1.5-1.5 1.5zm6 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5 0 1.5 1.5c0 .83-.67 1.5-1.5 1.5z"/>
+                        </svg>
+                        <span>Aave</span>
+                    </div>
                 </div>
             </div>
         </section>
